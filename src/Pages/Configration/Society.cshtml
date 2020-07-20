@@ -1,0 +1,91 @@
+﻿@page
+@model SocietyModel
+@{
+    ViewData["Title"] = "Society";
+}
+
+    <section class="content-header">
+        <h1>
+            Society Info
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Configration</a></li>
+            <li class="active">Society Info</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                   
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    <form role="form" method="post">
+                        <div class="box-body">
+                            <div class="form-group col-md-12">
+                                <label asp-for="society.FullName"></label>
+                                <input asp-for="society.FullName" class="form-control">
+                                <span asp-validation-for="society.FullName" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="society.YearEST"></label>
+                                <input asp-for="society.YearEST" class="form-control">
+                                <span asp-validation-for="society.YearEST" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="society.RegNo"></label>
+                                <input asp-for="society.RegNo" class="form-control">
+                                <span asp-validation-for="society.RegNo" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label asp-for="society.Street1Address"></label>
+                                <input asp-for="society.Street1Address" class="form-control">
+                                <span asp-validation-for="society.Street1Address" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label asp-for="society.Street2Address"></label>
+                                <input asp-for="society.Street2Address" class="form-control">
+                                <span asp-validation-for="society.Street2Address" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="society.City"></label>
+                                <input asp-for="society.City" class="form-control">
+                                <span asp-validation-for="society.City" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="society.Pincode"></label>
+                                <input asp-for="society.Pincode" class="form-control">
+                                <span asp-validation-for="society.Pincode" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label asp-for="society.State"></label>
+                                <input asp-for="society.State" class="form-control">
+                                <span asp-validation-for="society.State" class="help-block"></span>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label asp-for="society.Details"></label>
+                                <textarea asp-for="society.Details" class="form-control"></textarea>
+                                <span asp-validation-for="society.Details" class="help-block"></span>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+
+                        <div class="box-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.box -->
+               
+
+            </div>
+            <!--/.col (left) -->
+            
+        </div>
+        <!-- /.row -->
+    </section>
+
